@@ -27,7 +27,7 @@ const Problem2 = () => {
       <div
         className="modal fade"
         id="exampleModal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
@@ -46,15 +46,18 @@ const Problem2 = () => {
             </div>
             <div className="modal-body">...</div>
             <div className="modal-footer">
+              <button type="button" className="btn btn-primary">
+                US Contacts
+              </button>
+              <button type="button" className="btn btn-primary">
+                All Contacts
+              </button>
               <button
                 type="button"
                 className="btn btn-secondary"
                 data-bs-dismiss="modal"
               >
                 Close
-              </button>
-              <button type="button" className="btn btn-primary">
-                Save changes
               </button>
             </div>
           </div>
