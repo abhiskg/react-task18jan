@@ -1,28 +1,14 @@
-import React from "react";
-import Modal from "./Modal";
-
-const Problem2 = () => {
+const Modal = () => {
   return (
-    <>
-      <div className="container">
-        <div className="row justify-content-center mt-5">
-          <h4 className="text-center text-uppercase mb-5">Problem-2</h4>
-
-          <div className="d-flex justify-content-center gap-3">
-            <button
-              className="btn btn-lg btn-outline-primary"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              All Contacts
-            </button>
-            <button className="btn btn-lg btn-outline-warning" type="button">
-              US Contacts
-            </button>
-          </div>
-        </div>
-      </div>
+    <div>
+      <button
+        type="button"
+        className="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Launch demo modal
+      </button>
 
       <div
         className="modal fade"
@@ -60,8 +46,8 @@ const Problem2 = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Problem2;
+export default Modal;

@@ -22,7 +22,9 @@ const Problem1 = () => {
       (a.status.toLowerCase() === "active" &&
         b.status.toLowerCase() === "completed") ||
       (a.status.toLowerCase() === "active" &&
-        b.status.toLowerCase() !== "active")
+        b.status.toLowerCase() !== "active") ||
+      (a.status.toLowerCase() === "completed" &&
+        b.status.toLowerCase() !== "completed")
     ) {
       return -1;
     }
@@ -30,6 +32,8 @@ const Problem1 = () => {
       (a.status.toLowerCase() === "completed" &&
         b.status.toLowerCase() === "active") ||
       (a.status.toLowerCase() === "completed" &&
+        b.status.toLowerCase() === "completed") ||
+      (a.status.toLowerCase() !== "completed" &&
         b.status.toLowerCase() === "completed")
     ) {
       return 1;
